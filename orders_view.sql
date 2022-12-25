@@ -9,4 +9,4 @@ where dttm=max)
 select orders.order_id, order_ts, user_id, bonus_payment, payment,
 cost, bonus_grant, status_id as status
 from production.orders left join orderstatuslog_max on
-orders.order_id=orderstatuslog_max.order_id
+orders.order_id=orderstatuslog_max.order_id;
